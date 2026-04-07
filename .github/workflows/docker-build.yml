@@ -1,0 +1,17 @@
+name: Docker Build Only
+
+on:
+  push:
+    branches:
+      - main  # main branch in push after that trigger
+
+jobs:
+  build-only:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t paone-cloud-services-images:latest .
