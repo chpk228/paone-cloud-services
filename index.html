@@ -1,98 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paone Micro Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: teal; /* teal background */
-            scroll-behavior: smooth;
-            color: white; /* make text readable on teal */
-        }
-        header {
-            background-color: #004d4d; /* darker teal header */
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #006666; /* slightly lighter teal for nav */
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #ffcc00; /* gold text for contrast */
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #009999; /* highlight on hover */
-            color: white;
-        }
-        section {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* transparent white */
-            margin: 10px;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #004d4d;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        #istClock {
-            text-align: center;
-            font-size: 0.9em; /* small font */
-            margin: 15px 0;
-            font-weight: bold;
-            color: #fff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paone cloud-services</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a2a3a;
+        scroll-behavior: smooth;
+        color: white;
+    }
+
+    header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+        border-bottom: 3px solid #3498db;
+    }
+
+    nav {
+        background-color: #111b27;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: #ffcc00;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        background-color: #3498db;
+        color: white;
+    }
+
+    /* 📰 NEWS BAR */
+    #newsBar {
+        background-color: #0d161f;
+        color: #ffcc00;
+        padding: 10px;
+        margin: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    section {
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.07);
+        margin: 20px;
+        border-radius: 12px;
+    }
+
+    h2 {
+        color: #3498db;
+        border-bottom: 1px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        background-color: #0d161f;
+        color: #bdc3c7;
+        text-align: center;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    /* ⏰ CLOCK (SMALLER FONT FIX) */
+    #istClock {
+        text-align: center;
+        font-size: 0.75em;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ffcc00;
+    }
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Paone Micro-Services</h1>
-    </header>
+<header>
+    <h1>Paone cloud-services</h1>
+</header>
 
-    <nav>
-        <a href="#explore">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact us">Contact Us</a>
-    </nav>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact-us">Contact Us</a>
+</nav>
 
-    <section id="home">
-        <p>We are a team of passionate DevOps engineers, building and maintaining cost-effective, robust websites. Our mission is to make cloud web services better and more affordable.</p>
-    </section>
+<!-- 📰 NEWS TICKER -->
+<div id="newsBar">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        📰 Paone cloud services launches new AI tools | ☁ google cloud GCP for Ai work loads |
+        🌐 Google Cloud expands data centers in india | 🚀 AI assitant with GitOps in 2026 |
+        🔥 Cloud computing demand is rising worldwide for Ai and Automation | AWS cloud services free tire limit 180days
+    </marquee>
+</div>
 
-    <main>
-        <section id="services">
-            <h2>Amazon Web Services (AWS)</h2>
-            <p>Amazon Web Services (AWS) is a comprehensive cloud computing platform offering over 200 fully featured services  and Amazon Web Services (AWS) is a comprehensive cloud computing platform offering over 200 fully featured services and Amazon Web Services (AWS) is a cloud computing platform provided by Amazon, offering on-demand services like computing power, storage, databases, machine learning, and more. It allows individuals and organizations to run applications and store data in the cloud instead of maintaining physical servers and AWS revolutionized how companies build and scale applications. With its wide range of services, scalability, and global presence, AWS is the market leader in cloud computing and plays a critical role in modern IT infrastructure and Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. This frees clients from managing, scaling, and patching hardware and operating systems. One of the foundational services is Amazon Elastic Compute Cloud (EC2), which allows users to have at their disposal a virtual cluster of computers, with extremely high availability, which can be interacted with over the internet via REST APIs, a CLI or the AWS console. AWS's virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk (HDD)/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
+<section id="home">
+    <p>
+        We are a team of passionate DevOps engineers building and maintaining
+        cost-effective, robust cloud solutions and websites.
+    </p>
+</section>
+
+<main>
+
+<section id="services">
+    <h2>AWS (Amazon Web Services)</h2>
+    <p>AWS provides computing, storage, databases, and cloud services.Amazon Web Services (AWS) is a comprehensive cloud computing platform offering over 200 fully featured services and Amazon Web Services (AWS) is a cloud computing platform provided by Amazon, offering on-demand services like computing power, storage, databases, machine learning, and more. It allows individuals and organizations to run applications and store data in the cloud instead of maintaining physical servers and AWS revolutionized how companies build and scale applications. With its wide range of services, scalability, and global presence, AWS is the market leader in cloud computing and plays a critical role in modern IT infrastructure and Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. This frees clients from managing, scaling, and patching hardware and operating systems. One of the foundational services is Amazon Elastic Compute Cloud (EC2), which allows users to have at their disposal a virtual cluster of computers, with extremely high availability, which can be interacted with over the internet via REST APIs, a CLI or the AWS console. AWS's virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk (HDD)/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
 
 AWS services are delivered to customers via a network of AWS server farms located throughout the world. Fees are based on a combination of usage (known as a "Pay-as-you-go" model), hardware, operating system, software, and networking features chosen by the subscriber requiring various degrees of availability, redundancy, security, and service options. Subscribers can pay for a single virtual AWS computer, a dedicated physical computer, or clusters of either.[7] Amazon provides select portions of security for subscribers (e.g. physical security of the data centers) while other aspects of security are the responsibility of the subscriber (e.g. account management, vulnerability scanning, patching). AWS operates from many global geographical regions, including seven in North America.[8]
 
-Amazon markets AWS to subscribers as a way of obtaining large-scale computing capacity more quickly and cheaply than building an actual physical server farm.[9] All services are billed based on usage, but each service measures usage in varying ways. As of 2023 Q1, AWS has 31% market share for cloud infrastructure while the next two competitors Microsoft Azure and Google Cloud have 25%, and 11% respectively, according to Synergy Research Group....</p>
-            <ul>
-                <li>Elastic Cloud Computing (EC2)</li>
-                <li>AWS S3</li>
-                <li>AWS Lambda</li>
-                <li>AWS VPC</li>
-                <li>AWS Aurora</li>
-            </ul>
+Amazon markets AWS to subscribers as a way of obtaining large-scale computing capacity more quickly and cheaply than building an actual physical server farm.[9] All services are billed based on usage, but each service measures usage in varying ways. As of 2023 Q1, AWS has 31% market share for cloud infrastructure while the next two competitors Microsoft Azure and Google Cloud have 25%, and 11% respectively, according to Synergy Research Group...</p>
 
-            <h2>Microsoft Azure</h2>
-            <p>Azure provides a wide array of services across computing, storage, networking, and databases and Azure provides a wide array of services across computing, storage, networking, and databases and Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure[a] is the cloud computing platform developed by Microsoft. It offers management, access and development of applications and services to individuals, companies, and governments through its global infrastructure. It also provides capabilities that are usually not included within other cloud platforms, including software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS). Microsoft Azure supports many programming languages, tools, and frameworks, including Microsoft-specific and third-party software and systems.
+    <ul>
+        <li>EC2</li>
+        <li>S3 Storage</li>
+        <li>AWS Lambda</li>
+        <li>VPC Networking</li>
+        <li>Amazon Aurora</li>
+    </ul>
+
+    <h2>Microsoft Azure</h2>
+    <p>Azure provides cloud computing and enterprise services,databases and Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure[a] is the cloud computing platform developed by Microsoft. It offers management, access and development of applications and services to individuals, companies, and governments through its global infrastructure. It also provides capabilities that are usually not included within other cloud platforms, including software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS). Microsoft Azure supports many programming languages, tools, and frameworks, including Microsoft-specific and third-party software and systems.
 
 Azure was first introduced at the Professional Developers Conference (PDC) in October 2008 under the codename "Project Red Dog".[8] It was officially launched as Windows Azure in February 2010 and later renamed to Microsoft Azure on March 25, 2014 and Virtual machines, infrastructure as a service (IaaS), allowing users to launch general-purpose Microsoft Windows and Linux virtual machines, software as a service (SaaS), as well as preconfigured machine images for popular software packages.[13]
 Starting in 2022, these virtual machines are now powered by Ampere Cloud-native processors.
@@ -102,78 +148,87 @@ Azure Web Sites allows developers to build sites using ASP.NET, PHP, Node.js, Ja
 Web Jobs are applications that can be deployed to an App Service environment to implement background processing that can be invoked on a schedule, on-demand, or run continuously. The Blob, Table, and Queue services can be used to communicate between Web Apps and Web Jobs and to provide state.[8]
 Azure Kubernetes Service (AKS) provides the capability to deploy production-ready Kubernetes clusters in Azure.[18]
 In July 2023, watermarking support on Azure Virtual Desktop was announced as an optional feature of Screen Capture to provide additional security against data leakage.</p>
-            <ul>
-                <li>Azure VMs</li>
-                <li>Azure Networking</li>
-                <li>Azure Kubernetes Service</li>
-                <li>Azure Storage</li>
-            </ul>
 
-            <h2>Google Cloud Platform (GCP)</h2>
-            <p>GCP provides scalable and reliable infrastructure with services like virtual machines, storage, networking, and machine learning tools and also GCP provides scalable and reliable infrastructure with services like virtual machines, storage, networking, and machine learning tools and Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google that provides a series of modular cloud services including computing, data storage, data analytics, and machine learning, alongside a set of management tools.[5] It runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, and Google Docs, according to Verma et al.[6] Registration requires a credit card or bank account details.[7]
+    <ul>
+        <li>Virtual Machines</li>
+        <li>Azure Networking</li>
+        <li>AKS</li>
+        <li>Storage</li>
+    </ul>
+
+    <h2>Google Cloud Platform (GCP)</h2>
+    <p>Google Cloud offers AI, storage, and computing services.and GCP provides scalable and reliable infrastructure with services like virtual machines, storage, networking, and machine learning tools and also GCP provides scalable and reliable infrastructure with services like virtual machines, storage, networking, and machine learning tools and Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google that provides a series of modular cloud services including computing, data storage, data analytics, and machine learning, alongside a set of management tools.[5] It runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, and Google Docs, according to Verma et al.[6] Registration requires a credit card or bank account details.[7]
 
 Google Cloud Platform provides infrastructure as a service, platform as a service, and serverless computing environments.
 
 In April 2008, Google announced App Engine, a platform for developing and hosting web applications in Google-managed data centers, which was the first cloud computing service from the company. The service became generally available in November 2011. Since the announcement of App Engine, Google added multiple cloud services to the platform.
 
-Google Cloud Platform is a part of Google Cloud, which includes the Google Cloud Platform public cloud infrastructure, as well as Google Workspace (G Suite), enterprise versions of Android and ChromeOS, and application programming interfaces (APIs) for machine learning and enterprise mapping services. Since at least 2022,[9] Google's official materials have stated that "Google Cloud" is the new name for "Google Cloud Platform," which may cause naming confusion..</p>
-            <ul>
-                <li>Compute Engine</li>
-                <li>Google Kubernetes Engine (GKE)</li>
-                <li>Google Cloud Functions</li>
-                <li>Google App Engine</li>
-            </ul>
-        </section>
+Google Cloud Platform is a part of Google Cloud, which includes the Google Cloud Platform public cloud infrastructure, as well as Google Workspace (G Suite), enterprise versions of Android and ChromeOS, and application programming interfaces (APIs) for machine learning and enterprise mapping services. Since at least 2022,[9] Google's official materials have stated that "Google Cloud" is the new name for "Google Cloud Platform," which may cause naming confusion.</p>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>To successfully implement continuous integration, you need to change the culture of how an entire organization views software development ...</p>
-            <ul>
-                <li>Cloud Maintainer</li>
-                <li>Backup Support</li>
-                <li>CDN Services</li>
-                <li>AI Chatbots</li>
-            </ul>
-        </section>
+    <ul>
+        <li>Compute Engine</li>
+        <li>GKE</li>
+        <li>Cloud Functions</li>
+        <li>App Engine</li>
+    </ul>
+</section>
 
-        <section id="contact us">
-            <h2>Contact Us</h2>
-            <p>Paone Micro Services Inc. Please contact at Road Number 5, 9th Phase, Gandhi Nagar, Bangalore, Karnataka 560036.</p>
-            <ul>
-                <li>Head Office: Bangalore</li>
-                <li>Branch Office: Pune mumbai</li>
-            </ul>
-        </section>
-    </main>
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        We provide DevOps automation, CI/CD pipelines, cloud infrastructure,
+        backup solutions, CDN services, and AI integrations.
+    </p>
+</section>
 
-    <!-- IST Date & Time -->
-    <p id="istClock">Loading IST Date & Time...</p>
+<section id="contact-us">
+    <h2>Contact Us</h2>
+    <p>
+        Paone Micro Services Inc.<br>
+        Bangalore, Karnataka
+    </p>
+</section>
 
-    <footer>
-        &copy; 2026 Paone Website design inc. All rights are reserved. For more details contact Paone at (+91-92xx34xx00), Gandhi Nagar, Bangalore 560037.
-    </footer>
+</main>
 
-    <script>
-        function updateISTClock() {
-            const now = new Date();
-            const istOffset = 5 * 60 + 30;
-            const istTime = new Date(now.getTime() + istOffset * 60000);
-            const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-            const dayName = days[istTime.getUTCDay()];
-            const day = istTime.getUTCDate().toString().padStart(2, "0");
-            const month = months[istTime.getUTCMonth()];
-            const year = istTime.getUTCFullYear();
-            let hours = istTime.getUTCHours().toString().padStart(2, "0");
-            let minutes = istTime.getUTCMinutes().toString().padStart(2, "0");
-            let seconds = istTime.getUTCSeconds().toString().padStart(2, "0");
-            document.getElementById("istClock").innerText = 
-                `${dayName}, ${day} ${month} ${year} ${hours}:${minutes}:${seconds} IST`;
-        }
-        setInterval(updateISTClock, 1000);
-        updateISTClock();
-    </script>
+<!-- ⏰ CLOCK -->
+<p id="istClock">Loading IST Date & Time...</p>
+
+<footer>
+    &copy; 2026 Paone Website. All rights reserved.
+</footer>
+
+<script>
+function updateISTClock() {
+    const now = new Date();
+
+    const istTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+    );
+
+    const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+    const dayName = days[istTime.getDay()];
+    const day = istTime.getDate().toString().padStart(2, "0");
+    const month = months[istTime.getMonth()];
+    const year = istTime.getFullYear();
+
+    let hours = istTime.getHours();
+    let minutes = istTime.getMinutes().toString().padStart(2, "0");
+    let seconds = istTime.getSeconds().toString().padStart(2, "0");
+
+    let ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, "0");
+
+    document.getElementById("istClock").textContent =
+        `${dayName}, ${day} ${month} ${year} | ${hours}:${minutes}:${seconds} ${ampm}`;
+}
+
+setInterval(updateISTClock, 1000);
+updateISTClock();
+</script>
 
 </body>
 </html>
