@@ -1,35 +1,39 @@
-// Function to update IST Clock
-function updateClock() {
-    const clockElement = document.getElementById('istClock');
-    if (!clockElement) return;
-
+<script>
+// IST CLOCK
+function updateISTClock() {
     const now = new Date();
-    
-    // Convert to IST (India Standard Time)
-    const options = {
-        timeZone: 'Asia/Kolkata',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
-    };
-    
-    const istTime = now.toLocaleTimeString('en-IN', options);
-    const istDate = now.toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const ist = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
 
-    clockElement.innerHTML = `IST Time: ${istTime} <br> ${istDate}`;
+    let h = ist.getHours();
+    let m = ist.getMinutes().toString().padStart(2, "0");
+    let s = ist.getSeconds().toString().padStart(2, "0");
+
+    let ampm = h >= 12 ? "PM" : "AM";
+    h = h % 12 || 12;
+
+    document.getElementById("istClock").innerText =
+        `${h}:${m}:${s} ${ampm}`;
 }
+setInterval(updateISTClock, 1000);
 
-// Update clock every second
-setInterval(updateClock, 1000);
+// SCROLL ANIMATION
+const sections = document.querySelectorAll("section");
 
-// Initialize clock on load
-window.onload = updateClock;
-
-// Smooth scroll highlight (Optional: adding active class to nav)
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function() {
-        document.querySelectorAll('nav a').forEach(a => a.style.color = '#ffcc00');
-        this.style.color = '#fff';
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            sec.classList.add("show");
+        }
     });
 });
+
+// SMOOTH NAV CLICK
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+</script>
