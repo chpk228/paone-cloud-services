@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/pavan-cloud-services-image-v1.1:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/pavan-cloud-services-image-v1.0.3:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/pavan-cloud-services-image-v1.1:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/pavan-cloud-services-image-v1.0.3:latest
